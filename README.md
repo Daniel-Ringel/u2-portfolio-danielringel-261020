@@ -3,7 +3,7 @@
 
 A portfolio site built from Pawan's Figma design.
 
-**Live site:** https://daniel-ringel.github.io/u1-portfolio-danielringel-260915/index.html
+**Live site:** https://daniel-ringel.github.io/u2-portfolio-danielringel-261020/index.html
 
 ## Built with:
 - HTML
