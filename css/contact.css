@@ -1,29 +1,32 @@
 main {
-    text-align: center;
-    padding-top: 120px;
+  text-align: center;
+  padding-top: 120px;
 }
 
 main h1 {
-    font-size: 18px;
-    margin-bottom: 16px;
+  font-size: 18px;
+  margin-bottom: 16px;
 }
 
 main a {
-    text-decoration: none;
-    font-size: 22px;
-    font-weight: 700;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 .gradient-contact {
-    background: linear-gradient(to right, var(--color-logo-start-gradient), var(--color-logo-end-gradient));
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;    
+  background: linear-gradient(
+    to right,
+    var(--color-logo-start-gradient),
+    var(--color-logo-end-gradient)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 @media (max-width: 599px) {
-
-    footer {
+  footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -31,28 +34,25 @@ main a {
     color: var(--color-text-muted);
     background: var(--color-bg);
     font-size: 13px;
-    }
+  }
 
-    .author {
+  .author {
     color: var(--color-text-muted);
-    }
-
+  }
 }
 
- @media (min-width: 600px) {
-    
-    main { 
-        padding-top: 140px; 
-    }
+@media (min-width: 600px) {
+  main {
+    padding-top: 140px;
+  }
 
-    main h1 {
-        color: var(--color-contact-paragraph);
-        font-size: 45px;
-        margin-bottom: 0;
-    }
+  main h1 {
+    color: var(--color-contact-paragraph);
+    font-size: 45px;
+    margin-bottom: 0;
+  }
 
-    main a {
-        font-size: 45px;
-    }
-
- }
+  main a {
+    font-size: 45px;
+  }
+}

@@ -24,15 +24,15 @@
   --color-heading: #2b2b45;
   --color-text-muted: #6b6b6b;
   --color-text-muted-ligher: #767676;
-  --color-tag-bg: #DFFEE2;
-  --color-tag-text: #2F6E21;
+  --color-tag-bg: #dffee2;
+  --color-tag-text: #2f6e21;
   --color-border-mobile: #e0e0e0;
-  --color-border-desktop: #F1F1F2;
-  --color-header-about: #42446E;
+  --color-border-desktop: #f1f1f2;
+  --color-header-about: #42446e;
   --color-link: #333333;
   --color-shadow: #00000033;
   --color-black: #000000;
-  --color-contact-paragraph: #1E0E62;
+  --color-contact-paragraph: #1e0e62;
   --color-card-bg: #ffffff;
 }
 
@@ -84,7 +84,7 @@ header {
   border: none;
   padding: 0;
   cursor: pointer;
-  color: var(--color-text)
+  color: var(--color-text);
 }
 
 .list-button svg {
@@ -237,7 +237,7 @@ footer {
   }
 
   section.mobile-only {
-    display:none;
+    display: none;
   }
 
   p > .author {
@@ -278,42 +278,41 @@ footer {
   }
 }
 
+:root.dark {
+  color-scheme: dark;
+  --color-blue: #3a86ff;
+  --color-purple: #8c56d4;
+  --color-logo-start-gradient: #13b1f6;
+  --color-logo-end-gradient: #d51cb0;
+  --color-author-start-gradient: #7267d3;
+  --color-author-end-gradient: #9949c5;
+  --color-coffee-start-gradient: #d034b9;
+  --color-coffee-end-gradient: #e510aa;
+  --color-love-start-gradient: #b038bd;
+  --color-love-end-gradient: #c845c0;
+  --color-text: #d9d9d9;
+  --color-bg: #191919;
+  --color-nav: #a7a7a7;
+  --color-footer: #cccccc;
+  --color-heading: #cccccc;
+  --color-text-muted: #cccccc;
+  --color-text-muted-ligher: #d9d9d9;
+  --color-tag-bg: #dffee2;
+  --color-tag-text: #2f6e21;
+  --color-border-mobile: #e0e0e0;
+  --color-border-desktop: #f1f1f2;
+  --color-header-about: #cccccc;
+  --color-link: #ffffff;
+  --color-shadow: #00000033;
+  --color-black: #cccccc;
+  --color-contact-paragraph: #cccccc;
+  --color-card-bg: #363636;
+}
 
-  :root.dark {
-    color-scheme: dark;
-    --color-blue: #3a86ff;
-    --color-purple: #8c56d4;
-    --color-logo-start-gradient: #13b1f6;
-    --color-logo-end-gradient: #d51cb0;
-    --color-author-start-gradient: #7267d3;
-    --color-author-end-gradient: #9949c5;
-    --color-coffee-start-gradient: #d034b9;
-    --color-coffee-end-gradient: #e510aa;
-    --color-love-start-gradient: #b038bd;
-    --color-love-end-gradient: #c845c0;
-    --color-text: #D9D9D9;
-    --color-bg: #191919;
-    --color-nav: #A7A7A7;
-    --color-footer: #CCCCCC;
-    --color-heading: #CCCCCC;
-    --color-text-muted: #CCCCCC;
-    --color-text-muted-ligher: #D9D9D9;
-    --color-tag-bg: #DFFEE2;
-    --color-tag-text: #2F6E21;
-    --color-border-mobile: #e0e0e0;
-    --color-border-desktop: #F1F1F2;
-    --color-header-about: #CCCCCC;
-    --color-link: #FFFFFF;
-    --color-shadow: #00000033;
-    --color-black: #CCCCCC;
-    --color-contact-paragraph: #CCCCCC;
-    --color-card-bg: #363636;
-  }
+.dark .project-links img {
+  filter: invert(1);
+}
 
-  .dark .project-links img {
-    filter: invert(1);
-  }
-
-  .dark .invert-dark {
-    filter: invert(1);
-  }
+.dark .invert-dark {
+  filter: invert(1);
+}
