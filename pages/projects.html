@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/base.css" />
     <link rel="stylesheet" href="../css/project.css" />
     <script src="../js/theme.js" defer></script>
+    <script src="../js/menu.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -45,7 +46,7 @@
           />
         </svg>
       </button>
-      <button class="list-button" aria-label="Open menu">
+      <button class="list-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="page-list">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
@@ -60,7 +61,7 @@
         </svg>
       </button>
       <!-- Navigator for the other pages and socials -->
-      <nav>
+      <nav id="page-list">
         <!-- Clickable links that takes you to other pages -->
         <ul class="pages">
           <li><a href="../index.html">Home</a></li>
