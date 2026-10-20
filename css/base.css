@@ -53,6 +53,26 @@ header {
   align-items: center;
 }
 
+.theme-toggle {
+  margin-left: auto;
+  margin-right: 1rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  color: var(--color-text);
+  border: 1px solid currentColor;
+  cursor: pointer;
+}
+
+.theme-toggle svg {
+  width: 18px;
+  height: 18px;
+}
+
 .logo {
   background: linear-gradient(
     to right,
