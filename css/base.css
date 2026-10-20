@@ -5,7 +5,7 @@
 }
 
 :root {
-  color-scheme: light dark;
+  color-scheme: light;
 
   --color-blue: #3a86ff;
   --color-purple: #8c56d4;
@@ -84,6 +84,7 @@ header {
   border: none;
   padding: 0;
   cursor: pointer;
+  color: var(--color-text)
 }
 
 .list-button svg {
@@ -279,6 +280,7 @@ footer {
 
 
   :root.dark {
+    color-scheme: dark;
     --color-blue: #3a86ff;
     --color-purple: #8c56d4;
     --color-logo-start-gradient: #13b1f6;
