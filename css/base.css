@@ -277,8 +277,8 @@ footer {
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
+
+  :root.dark {
     --color-blue: #3a86ff;
     --color-purple: #8c56d4;
     --color-logo-start-gradient: #13b1f6;
@@ -308,11 +308,10 @@ footer {
     --color-card-bg: #363636;
   }
 
-  .project-links img {
+  .dark .project-links img {
     filter: invert(1);
   }
 
-  .invert-dark {
+  .dark .invert-dark {
     filter: invert(1);
   }
-}
