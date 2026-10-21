@@ -49,7 +49,7 @@ Med mer tid skulle jag bygga om hur `project.js` använder GitHubs API, eftersom
 
 ### AI-verktyg
 
-Jag använde AI som en lärare. Den gav mig oftast inte färdig kod att kopiera, utan förklarade nya saker och gav mig kod med luckor som jag fyllde i själv, till exempel i `menu.js`. Sedan testade jag allt i webbläsaren. Jag litade inte blint på koden. När projekten hade laddat låg texten "Loading projects" kvar, trots att koden satte `hidden`. Jag märkte det när jag testade, och felet var att min CSS med `display: flex` vann över `hidden`, så jag lade till regeln `#projects-status[hidden]`.
+Jag använde AI som en lärare. Den förklarade nya saker och gav mig kodexempel, och ibland kod med luckor som jag fyllde i själv, till exempel i `menu.js`. Jag litade inte blint på koden utan testade allt i webbläsaren. Till exempel låg texten "Loading projects" kvar efter att projekten hade laddat, trots att koden satte `hidden`. Jag frågade varför, och fick förklarat att min CSS med `display: flex` vann över `hidden`. Då lade jag till regeln `#projects-status[hidden]`.
 
 ## Tillgänglighet och testning
 
