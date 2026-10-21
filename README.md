@@ -4,6 +4,8 @@ A portfolio site built from Pawan's Figma design, made dynamic with JavaScript.
 
 **Live site:** https://daniel-ringel.github.io/u2-portfolio-danielringel-261020/
 
+**Jag siktar på VG.**
+
 ## Built with:
 - HTML and CSS (Flexbox and Grid)
 - JavaScript (ES2024+)
