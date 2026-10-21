@@ -1,5 +1,6 @@
 const projectsList = document.querySelector("#projects-list");
 const projectsStatus = document.querySelector("#projects-status");
+const GITHUB_PROFILE = "https://github.com/Daniel-Ringel";
 
 const placeholderImages = [
   {
@@ -28,19 +29,30 @@ const placeholderImages = [
   },
 ];
 
+function showStatus(message) {
+  projectsStatus.innerHTML = `
+    ${message}
+    You can still see my work on <a href="${GITHUB_PROFILE}">my GitHub</a>.
+  `;
+}
+
 async function getLanguages(repo) {
-    try {
-        const response = await fetch(repo.languages_url);
+  try {
+    const response = await fetch(repo.languages_url, {
+      signal: AbortSignal.timeout(5000),
+    });
 
-        if (!response.ok) throw new Error("Languages not available");
+    if (!response.ok) throw new Error("Languages not available");
 
-        const languages = await response.json();
-        const names = Object.keys(languages);
+    const languages = await response.json();
+    const names = Object.keys(languages);
 
-        return names.length > 0 ? names.join(", ") : repo.language ?? "Not specified";
-    } catch {
-        return repo.language ?? "Not specified";
-    }
+    return names.length > 0
+      ? names.join(", ")
+      : (repo.language ?? "Not specified");
+  } catch {
+    return repo.language ?? "Not specified";
+  }
 }
 
 function createProjectCard(repo, index) {
@@ -76,11 +88,23 @@ function createProjectCard(repo, index) {
 }
 
 async function loadProjects() {
-  const response = await fetch(
-    "https://api.github.com/users/Daniel-Ringel/repos?sort=pushed",
-  );
-  const repos = await response.json();
-  const ownRepos = repos.filter((repo) => !repo.fork);
+  try {
+    const response = await fetch(
+      "https://api.github.com/users/Daniel-Ringel/repos?sort=pushed",
+      {
+        signal: AbortSignal.timeout(8000),
+      },
+    );
+
+    if (!response.ok) throw new Error(`GitHub answered ${response.status}`);
+
+    const repos = await response.json();
+    const ownRepos = repos.filter((repo) => !repo.fork);
+
+    if (ownRepos.length === 0) {
+      showStatus("No projects to show yet.");
+      return;
+    }
 
     const reposWithLanguages = await Promise.all(
       ownRepos.map(async (repo) => ({
@@ -89,8 +113,15 @@ async function loadProjects() {
       })),
     );
 
-  projectsList.innerHTML = reposWithLanguages.map(createProjectCard).join("");
-  projectsStatus.textContent = "";
+    projectsList.innerHTML = reposWithLanguages.map(createProjectCard).join("");
+    projectsStatus.hidden = true;
+  } catch (error) {
+    if (error.name === "TimeoutError") {
+      showStatus("GitHub is taking too long to answer.");
+    } else {
+      showStatus("Couldn't load projects right now.");
+    }
+  }
 }
 
 loadProjects();

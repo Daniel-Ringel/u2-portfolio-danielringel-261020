@@ -8,6 +8,29 @@ main h1 {
   margin-bottom: 20px;
 }
 
+#projects-status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 32px;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--color-border-mobile);
+  border-top-color: var(--color-purple);
+  animation: spin 0.8s linear infinite;
+}
+
+.loading-dots::after {
+  content: "";
+  display: inline-block;
+  width: 3ch;
+  animation: dots 1.5s steps(1) infinite;
+}
+
 .project-list {
   list-style: none;
   display: grid;
@@ -174,4 +197,19 @@ main h1 {
   main .mobile-only {
     display: none;
   }
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg);}
+}
+
+@keyframes dots {
+  0% { content: "."; }
+  33% { content: ".."; }
+  66% { content: "..."; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner { animation: none; }
+  .loading-dots::after { animation: none; content: "..."; }
 }
