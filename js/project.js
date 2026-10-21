@@ -31,8 +31,10 @@ const placeholderImages = [
 
 function showStatus(message) {
   projectsStatus.innerHTML = `
+  <span>
     ${message}
     You can still see my work on <a href="${GITHUB_PROFILE}">my GitHub</a>.
+    </span>
   `;
 }
 
