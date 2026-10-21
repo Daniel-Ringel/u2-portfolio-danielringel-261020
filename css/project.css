@@ -15,6 +15,10 @@ main h1 {
   margin-top: 32px;
 }
 
+#projects-status[hidden] {
+  display: none;
+}
+
 .spinner {
   width: 20px;
   height: 20px;
