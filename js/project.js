@@ -72,13 +72,13 @@ function createProjectCard(repo, index) {
             repo.homepage
               ? `
             <a href="${repo.homepage}">
-                <img src="../assets/link-45deg.svg" alt="">Live Preview
+                <img src="../assets/link-45deg.svg" alt="">Live Preview<span class="visually-hidden"> of ${repo.name}</span>
             </a>
             `
               : ""
           }
             <a href="${repo.html_url}">
-              <img src="../assets/github.svg" alt="">View Code
+              <img src="../assets/github.svg" alt="">View Code<span class="visually-hidden"> of ${repo.name}</span>
             </a>
           </div>
         </div>
