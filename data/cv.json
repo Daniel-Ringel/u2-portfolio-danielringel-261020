@@ -1,49 +1,48 @@
 {
-    "work": [
-        {
-            "title": "Frontend Web Developer",
-            "tag": "Full Time",
-            "company": "Company Name here",
-            "location": "Bengaluru",
-            "dates": "Sep 2021 - Dec 2021"
-        },
-        {
-          "title": "Internship",
-          "tag": "Internship",
-          "company": "Company Name here",
-          "location": "Bengaluru",
-          "dates": "Sep 2021 - Dec 2021"
-        },
-        {
-          "title": "Internship",
-          "tag": "Internship",
-          "company": "Company Name here",
-          "location": "Bengaluru",
-          "dates": "Sep 2021 - Dec 2021"
-        }
-
-    ],
-    "education": [
-      {
-        "title": "Fullstack Javascript",
-        "tag": "Full Time",
-        "company": "Chas Academy",
-        "location": "Sweden, Stockholm",
-        "dates": "Sep 2026 - Present"
-      },
-      {
-        "title": "Electrical Engineer Construction",
-        "tag": "Full Time",
-        "company": "Nackademin",
-        "location": "Sweden, Stockholm",
-        "dates": "Aug 2023 - May 2025"
-      },
-      {
-        "title": "System Developer",
-        "tag": "Full Time",
-        "company": "LBS Creative Upper Secondary School",
-        "location": "Sweden, Stockholm",
-        "dates": "Aug 2018 - June 2021"
-      }
-    ]
+  "work": [
+    {
+      "title": "Frontend Web Developer",
+      "tag": "Full Time",
+      "company": "Company Name here",
+      "location": "Bengaluru",
+      "dates": "Sep 2021 - Dec 2021"
+    },
+    {
+      "title": "Internship",
+      "tag": "Internship",
+      "company": "Company Name here",
+      "location": "Bengaluru",
+      "dates": "Sep 2021 - Dec 2021"
+    },
+    {
+      "title": "Internship",
+      "tag": "Internship",
+      "company": "Company Name here",
+      "location": "Bengaluru",
+      "dates": "Sep 2021 - Dec 2021"
+    }
+  ],
+  "education": [
+    {
+      "title": "Fullstack Javascript",
+      "tag": "Full Time",
+      "company": "Chas Academy",
+      "location": "Sweden, Stockholm",
+      "dates": "Sep 2026 - Present"
+    },
+    {
+      "title": "Electrical Engineer Construction",
+      "tag": "Full Time",
+      "company": "Nackademin",
+      "location": "Sweden, Stockholm",
+      "dates": "Aug 2023 - May 2025"
+    },
+    {
+      "title": "System Developer",
+      "tag": "Full Time",
+      "company": "LBS Creative Upper Secondary School",
+      "location": "Sweden, Stockholm",
+      "dates": "Aug 2018 - June 2021"
+    }
+  ]
 }
