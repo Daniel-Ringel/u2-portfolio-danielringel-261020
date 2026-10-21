@@ -1,14 +1,15 @@
-# Daniel Ringel - Portfolio
+# Daniel Ringel – Portfolio (u02)
 
+A portfolio site built from Pawan's Figma design, made dynamic with JavaScript.
 
-A portfolio site built from Pawan's Figma design.
-
-**Live site:** https://daniel-ringel.github.io/u2-portfolio-danielringel-261020/index.html
+**Live site:** https://daniel-ringel.github.io/u2-portfolio-danielringel-261020/
 
 ## Built with:
-- HTML
-- CSS (Flexbox and Grid)
-- Google Fonts (Poppins)
+- HTML and CSS (Flexbox and Grid)
+- JavaScript (ES2024+)
+- JSON (my CV in `data/cv.json`)
+- GitHub's REST API (my projects)
+- Google Fonts (Poppins and DM Sans)
 
 ## Reflektion
 
