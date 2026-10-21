@@ -72,9 +72,9 @@ function createCvArticle(entry) {
     `;
 }
 
-function renderCvList(entries, containerId){
-    const container = document.querySelector(containerId);
-    container.innerHTML = entries.map(createCvArticle).join("");
+function renderCvList(entries, containerId) {
+  const container = document.querySelector(containerId);
+  container.innerHTML = entries.map(createCvArticle).join("");
 }
 
 loadCv();
