@@ -171,7 +171,7 @@ main h3 {
     color: var(--color-text-muted-ligher);
   }
 
-  .experience:last-child {
+  #education-list .experience:last-child {
     margin-bottom: 224px;
   }
 }
